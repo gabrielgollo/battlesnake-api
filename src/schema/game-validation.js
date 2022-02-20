@@ -1,10 +1,8 @@
 const yup = require('yup');
 
 const startSchema = yup.object().shape({
-    gameState: yup.object().shape({
-        game: yup.object().shape({
-            id: yup.string().required('Game id is required!')
-        })
+    game: yup.object().shape({
+        id: yup.string().required('Game id is required!')
     })
 })
 

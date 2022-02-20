@@ -9,4 +9,6 @@ routes.get('/', (req, res) => {
 
 routes.post('/start', GameController.start);
 
+routes.post('/move', GameController.move);
+
 module.exports = routes;

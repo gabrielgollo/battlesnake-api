@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(function (req, res, next) {
     console.log(`${new Date().toLocaleTimeString('pt-br')} -- ${req.hostname} -- from ip: ${req.ip} -- ${req.method} -- ${req.originalUrl}`);
-    res.set("Server", "BattlesnakeOfficial/starter-snake-javascript")
+    //res.set("Server", "BattlesnakeOfficial/starter-snake-javascript")
     next()
 })
 
